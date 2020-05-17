@@ -12,7 +12,7 @@ RUN mv $(ls -d stanford-corenlp-full-*/) corenlp
 RUN rm *.zip
 
 WORKDIR /data/corenlp
-RUN curl -O -L http://nlp.stanford.edu/software/stanford-english-kbp-corenlp-2018-10-05-models.jar
+RUN curl -O -L https://nlp.stanford.edu/software/stanford-spanish-kbp-corenlp-2018-10-05-models.jar
 
 FROM alpine:3.9
 LABEL maintainer="Gabriel Nepomuceno <ganepomu@microsoft.com>"
